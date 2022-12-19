@@ -16,5 +16,7 @@
         Console.WriteLine();
         Etapa3.Etapa_3();
 
+        Console.ReadLine();
+
     }
 }

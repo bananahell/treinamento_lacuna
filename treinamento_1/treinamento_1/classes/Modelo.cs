@@ -6,11 +6,12 @@ class Modelo
     public string NomeModelo { get; set; }
     public string? Slogan { get; set; }
     public int NumPortas { get; set; }
-    public static List<Modelo> modelos = new();
+
+    public static List<Modelo> Modelos = new();
 
     public static Modelo? GetModelo(string nomeModelo)
     {
-        return modelos.Find(modelo => modelo.NomeModelo == nomeModelo);
+        return Modelos.Find(modelo => modelo.NomeModelo == nomeModelo);
     }
 
     public Modelo()
@@ -39,16 +40,16 @@ class Modelo
 
     private static void InsertModelo(Modelo modeloIn)
     {
-        var modeloEncontrado = modelos.Find(modelo => modelo.NomeModelo == modeloIn.NomeModelo);
+        var modeloEncontrado = Modelos.Find(modelo => modelo.NomeModelo == modeloIn.NomeModelo);
         if (modeloEncontrado != null && modeloEncontrado.NomeModelo != "")
         {
-            modelos.Add(modeloIn);
+            Modelos.Add(modeloIn);
         }
     }
 
     private static Modelo FindModelo(string nomeModelo)
     {
-        var modeloEncontrado = modelos.Find(modelo => modelo.NomeModelo == nomeModelo);
+        var modeloEncontrado = Modelos.Find(modelo => modelo.NomeModelo == nomeModelo);
         if (modeloEncontrado == null)
         {
             return new Modelo();

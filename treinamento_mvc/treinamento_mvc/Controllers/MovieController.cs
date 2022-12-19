@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using treinamento_mvc.Models;
+using treinamento_mvc.ViewModels;
 
 namespace treinamento_mvc.Controllers
 {
@@ -6,7 +8,13 @@ namespace treinamento_mvc.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var movies = Movie.SelectAll().ConvertAll(m => new MovieListViewModel()
+            {
+                Rank = m.Rank,
+                Title = m.Title,
+                Year = m.Year
+            });
+            return View(movies);
         }
 
         public ActionResult MovieOfTheMonth()

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\treinamento_1\\treinamento_1\\treinamento_1.csproj",
+      "projectUniqueName": "C:\\Projetos\\lacuna\\treinamento_lacuna\\treinamento_1\\treinamento_1\\treinamento_1.csproj",
       "projectName": "treinamento_1",
-      "projectPath": "C:\\Projetos\\treinamento_1\\treinamento_1\\treinamento_1.csproj",
+      "projectPath": "C:\\Projetos\\lacuna\\treinamento_lacuna\\treinamento_1\\treinamento_1\\treinamento_1.csproj",
       "packagesPath": "C:\\Users\\Pedro Nogueira\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\treinamento_1\\treinamento_1\\obj\\",
+      "outputPath": "C:\\Projetos\\lacuna\\treinamento_lacuna\\treinamento_1\\treinamento_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pedro Nogueira\\AppData\\Roaming\\NuGet\\NuGet.Config",

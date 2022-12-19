@@ -1,14 +1,10 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@using treinamento_mvc.ViewModels
+@model List<MovieListViewModel>
 @{
-    Layout = null;
-    var movie1 = new { Rank = 1, Title = "The Shawshank Redemption", Year = 1994 };
-    var movie2 = new { Rank = 2, Title = "The Godfather", Year = 1972 };
-    var movie3 = new { Rank = 3, Title = "The Godfather - Part II", Year = 1974 };
-    var movie4 = new { Rank = 4, Title = "The Dark Knight", Year = 2008 };
-    var movie5 = new { Rank = 5, Title = "Pulp Fiction", Year = 1994 };
-    var moviesList = new[] { movie1, movie2, movie3, movie4, movie5 }.ToList();
+    var movieOfTheMonth = new { Rank = 1, Title = "The Shawshank Redemption", Year = 1994 };
 }
 
 <!DOCTYPE html>
@@ -16,10 +12,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=devide-width" />
-    <title>Index</title>
+    <title>Movies</title>
 </head>
 <body>
     <div>
+        <b>Movie of the month: @movieOfTheMonth.Title </b>
+        <br />
         <b>Movies List:</b>
         <br />
         <table border="1">
@@ -28,7 +26,7 @@
                 <th>Title</th>
                 <th>Year</th>
             </tr>
-            @foreach (var movie in moviesList)
+            @foreach (var movie in Model)
             {
                 <tr>
                     <td>@movie.Rank</td>

@@ -1,9 +1,11 @@
 ﻿class Carro : Modelo
 {
 
-    public string? Renavam { get; set; }
+    private string renavam;
+    public string? Renavam { get { return renavam; } set { renavam = value; } }
     public string? Cor { get; set; }
     public Opcoes Adicionais { get; set; }
+    public int MyProperty { get; set; }
 
     private static readonly Dictionary<CoresIndex, string> Cores = new() {
         { CoresIndex.Branco, "Branco" },
@@ -23,12 +25,12 @@
     [Flags]
     public enum Opcoes
     {
-        Nada = 0b_0000,
+        // Nada = 0b_0000,
+        // Tudo = 0b1111,
         FreioABS = 0b_0001,
         SensorEstacionador = 0b_0010,
         ArCondicionado = 0b_0100,
-        GPS = 0b_1000,
-        Tudo = 0b1111
+        GPS = 0b_1000
     }
 
     public Carro() : base()
@@ -41,7 +43,14 @@
     public Carro(string renavam, CoresIndex cor, Opcoes adicionais, string nomeModelo) : base(nomeModelo)
     {
         Renavam = renavam;
-        Cor = Cores.First(corEncontrada => corEncontrada.Key == cor).Value;
+        if (Cores.TryGetValue(cor, out var corEncontrada))
+        {
+            Cor = corEncontrada; // Cores.First(corEncontrada => corEncontrada.Key == cor).Value;
+        }
+        else
+        {
+            Cor = null;
+        }
         Adicionais = adicionais;
     }
 
