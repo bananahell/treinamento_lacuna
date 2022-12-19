@@ -1,0 +1,15 @@
+C:\Projetos\treinamento_1\treinamento_1\bin\Debug\net6.0\treinamento_1.exe
+C:\Projetos\treinamento_1\treinamento_1\bin\Debug\net6.0\treinamento_1.deps.json
+C:\Projetos\treinamento_1\treinamento_1\bin\Debug\net6.0\treinamento_1.runtimeconfig.json
+C:\Projetos\treinamento_1\treinamento_1\bin\Debug\net6.0\treinamento_1.dll
+C:\Projetos\treinamento_1\treinamento_1\bin\Debug\net6.0\treinamento_1.pdb
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.csproj.AssemblyReference.cache
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.AssemblyInfoInputs.cache
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.AssemblyInfo.cs
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.csproj.CoreCompileInputs.cache
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.dll
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\refint\treinamento_1.dll
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.pdb
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\treinamento_1.genruntimeconfig.cache
+C:\Projetos\treinamento_1\treinamento_1\obj\Debug\net6.0\ref\treinamento_1.dll
